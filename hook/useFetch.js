@@ -11,4 +11,19 @@ const useFetch = (endpoint, query) => {
     url: `https://65dd20e8e7edadead7ed6feb.mockapi.io/api/${endpoint}`,
     params: { ...query },
   };
+
+  const fetchData = async () => {
+    setIsLoading(true);
+    try {
+      const response = await axios.request(options);
+
+      setData(response.data.data);
+      setIsLoading(false);
+    } catch (error) {
+      setError(error);
+      alert("There is an error!");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 };
