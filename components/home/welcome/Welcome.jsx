@@ -60,6 +60,7 @@ const Welcome = () => {
             </TouchableOpacity>
           )}
           keyExtractor={(item) => item}
+          horizontal
         />
       </View>
     </View>
