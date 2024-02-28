@@ -23,7 +23,12 @@ const Home = () => {
           },
           headerTitleAlign: "center",
           headerShadowVisible: false,
-          headerLeft: () => <ScreenHeaderBtn />,
+          headerLeft: () => (
+            <ScreenHeaderBtn
+              iconURL={icons.menu}
+              dimension="60%"
+            />
+          ),
         }}
       />
     </SafeAreaView>
