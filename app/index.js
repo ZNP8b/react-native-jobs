@@ -15,7 +15,7 @@ const Home = () => {
   const router = useRouter();
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Text>Home</Text>
     </SafeAreaView>
   );
