@@ -17,7 +17,10 @@ const Welcome = () => {
 
   return (
     <View>
-      <Text>Welcome</Text>
+      <View style={styles.container}>
+        <Text style={styles.userName}>Hello, Nikita!</Text>
+        <Text style={styles.welcomeMessage}>Find your perfect job!</Text>
+      </View>
     </View>
   );
 };
