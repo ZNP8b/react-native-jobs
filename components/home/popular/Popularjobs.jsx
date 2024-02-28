@@ -13,6 +13,8 @@ import { COLORS, SIZES } from "../../../constants";
 import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
+  const router = useRouter();
+
   return (
     <View>
       <Text>Popularjobs</Text>
