@@ -4,7 +4,12 @@ import { Stack, useRouter } from "expo-router";
 
 import { COLORS, icons, images, SIZES } from "../constants";
 
-import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from "../components";
+import {
+  Nearbyjobs,
+  Popularjobs,
+  ScreenHeaderBtn,
+  Welcome,
+} from "../components";
 
 const Home = () => {
   const router = useRouter();
@@ -16,8 +21,12 @@ const Home = () => {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerTitleAlign: "center",
           headerShadowVisible: false,
-          headerLeft: () => <ScreenHeaderBtn iconURL={icons.menu} dimension="60%" />,
-          headerRight: () => <ScreenHeaderBtn iconURL={icons.profile} dimension="100%" />,
+          headerLeft: () => (
+            <ScreenHeaderBtn iconURL={icons.menu} dimension="60%" />
+          ),
+          headerRight: () => (
+            <ScreenHeaderBtn iconURL={icons.profile} dimension="100%" />
+          ),
           headerTitle: "",
         }}
       />
