@@ -26,7 +26,9 @@ const Home = () => {
           style={{
             padding: SIZES.medium,
           }}
-        ></View>
+        >
+          <Welcome />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
