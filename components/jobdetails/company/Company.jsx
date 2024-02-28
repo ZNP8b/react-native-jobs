@@ -1,14 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 
 import styles from "./company.style";
+import { icons } from "../../../constants";
+import { checkImageURL } from "../../../utils";
 
-const Company = () => {
-  return (
-    <View>
-      <Text>Company</Text>
-    </View>
-  );
+const Company = ({ companyLogo, jobTitle, companyName, location }) => {
+  return <View></View>;
 };
 
 export default Company;
