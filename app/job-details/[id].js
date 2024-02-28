@@ -44,10 +44,7 @@ const JobDetails = () => {
         );
       case "About":
         return (
-          <JobAbout
-            title="About"
-            info={data[0].job_description ?? "No data provided"}
-          />
+          <JobAbout info={data[0].job_description ?? "No data provided"} />
         );
 
       case "Responsibilities":
