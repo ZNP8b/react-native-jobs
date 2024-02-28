@@ -6,7 +6,7 @@ import {
   ActivityIndicator,
   RefreshControl,
 } from "react-native";
-import { Stack, useRouter, useSearchParams } from "expo-router";
+import { Stack, useRouter, useLocalSearchParams } from "expo-router";
 import { useCallback, useState } from "react";
 
 import {
@@ -21,7 +21,10 @@ import { COLORS, SIZES, icons } from "../../constants";
 import useFetch from "../../hook/useFetch";
 
 const JobDetails = () => {
-  return <Text>JobDetails</Text>;
+  const params = useLocalSearchParams();
+  const router = useRouter();
+
+  return <Text>{params.id}</Text>;
 };
 
 export default JobDetails;
