@@ -48,7 +48,12 @@ const JobDetails = () => {
         );
 
       case "Responsibilities":
-        break;
+        return (
+          <Specifics
+            title="Responsibilities"
+            points={data[0].job_responsibilities ?? ["N/A"]}
+          />
+        );
 
       default:
         break;
@@ -111,6 +116,8 @@ const JobDetails = () => {
             </View>
           )}
         </ScrollView>
+
+        <JobFooter url={data[0]?.job_google_link ?? "https://google.com"} />
       </>
     </SafeAreaView>
   );
