@@ -22,6 +22,7 @@ const Home = () => {
             backgroundColor: COLORS.lightWhite,
           },
           headerTitleAlign: "center",
+          headerShadowVisible: false,
         }}
       />
     </SafeAreaView>
