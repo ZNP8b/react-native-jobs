@@ -29,7 +29,7 @@ const Welcome = () => {
             value=""
             onChange={() => {}}
             placeholder="What are you looking for?"
-            cursorColor={COLORS.tertiary}
+            selectionColor={COLORS.tertiary}
           />
         </View>
 
