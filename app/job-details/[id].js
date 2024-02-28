@@ -33,6 +33,27 @@ const JobDetails = () => {
   const [refreshing, setRefreshing] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
+  const displayTabContent = () => {
+    switch (activeTab) {
+      case "Qualifications":
+        return (
+          <Specifics
+            title="Qualifications"
+            points={data[0].job_qualifications ?? ["N/A"]}
+          />
+        );
+        break;
+      case "About":
+        break;
+
+      case "Responsibilities":
+        break;
+
+      default:
+        break;
+    }
+  };
+
   const onRefresh = () => {};
 
   return (
@@ -84,6 +105,8 @@ const JobDetails = () => {
                 activeTab={activeTab}
                 setActiveTab={setActiveTab}
               />
+
+              {displayTabContent()}
             </View>
           )}
         </ScrollView>
