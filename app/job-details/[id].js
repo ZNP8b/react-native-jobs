@@ -28,6 +28,10 @@ const JobDetails = () => {
     job_id: params.id,
   });
 
+  const [refreshing, setRefreshing] = useState(false);
+
+  const onRefresh = () => {};
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
@@ -49,6 +53,15 @@ const JobDetails = () => {
           headerTitle: "",
         }}
       />
+
+      <>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          refreshControl={
+            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+          }
+        ></ScrollView>
+      </>
     </SafeAreaView>
   );
 };
