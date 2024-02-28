@@ -35,6 +35,7 @@ const Home = () => {
               dimension="100%"
             />
           ),
+          headerTitle: "",
         }}
       />
     </SafeAreaView>
