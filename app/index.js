@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, ScrollView, SafeAreaView } from "react-native";
+import { View, ScrollView, SafeAreaView, Text } from "react-native";
 import { Stack, useRouter } from "expo-router";
 
 import { COLORS, icons, images, SIZES } from "../constants";
@@ -15,9 +15,9 @@ const Home = () => {
   const router = useRouter();
 
   return (
-    <View>
+    <SafeAreaView>
       <Text>Home</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
