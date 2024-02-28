@@ -17,6 +17,7 @@ import {
   ScreenHeaderBtn,
   Specifics,
 } from "../../components";
+import { COLORS, SIZES, icons } from "../../constants";
 
 const JobDetails = () => {
   return <Text>JobDetails</Text>;
