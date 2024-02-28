@@ -10,7 +10,7 @@ import {
 import { useRouter } from "expo-router";
 
 import styles from "./welcome.style";
-import { icons, SIZES } from "../../../constants";
+import { COLORS, icons, SIZES } from "../../../constants";
 
 const Welcome = () => {
   const router = useRouter();
@@ -29,6 +29,7 @@ const Welcome = () => {
             value=""
             onChange={() => {}}
             placeholder="What are you looking for?"
+            cursorColor={COLORS.tertiary}
           />
         </View>
 
