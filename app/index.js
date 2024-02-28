@@ -23,6 +23,7 @@ const Home = () => {
           },
           headerTitleAlign: "center",
           headerShadowVisible: false,
+          headerLeft: () => <ScreenHeaderBtn />,
         }}
       />
     </SafeAreaView>
