@@ -28,7 +28,29 @@ const JobDetails = () => {
     job_id: params.id,
   });
 
-  return <Text>{params.id}</Text>;
+  return (
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+      <Stack.Screen
+        options={{
+          headerStyle: { backgroundColor: COLORS.lightWhite },
+          headerShadowVisible: false,
+          headerBackVisible: false,
+          headerTitleAlign: "center",
+          headerLeft: () => (
+            <ScreenHeaderBtn
+              iconURL={icons.left}
+              dimension="60%"
+              handlePress={() => router.back()}
+            />
+          ),
+          headerRight: () => (
+            <ScreenHeaderBtn iconURL={icons.share} dimension="60%" />
+          ),
+          headerTitle: "",
+        }}
+      />
+    </SafeAreaView>
+  );
 };
 
 export default JobDetails;
