@@ -28,6 +28,7 @@ const Home = () => {
           }}
         >
           <Welcome />
+          <Popularjobs />
         </View>
       </ScrollView>
     </SafeAreaView>
