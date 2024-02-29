@@ -15,11 +15,16 @@ import useFetch from "../../../hook/useFetch";
 
 const Popularjobs = () => {
   const router = useRouter();
-  const { data, isLoading, error } = useFetch("search");
+  const { data, isLoading, error } = useFetch("search", {
+    p: 1,
+    l: 5,
+  });
 
   const [selectedJob, setSelectedJob] = useState();
 
-  const handleCardPress = () => {};
+  const handleCardPress = (item) => {
+    router.push(`/job-details/${item.job_id}`);
+  };
 
   return (
     <View style={styles.container}>
