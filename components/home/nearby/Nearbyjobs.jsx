@@ -10,7 +10,7 @@ const Nearbyjobs = () => {
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
     p: 1,
-    l: 5,
+    l: 10,
   });
 
   return (
