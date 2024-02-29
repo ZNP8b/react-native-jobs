@@ -62,8 +62,6 @@ const JobSearch = () => {
     handleSearch();
   }, []);
 
-  console.log(params);
-
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
