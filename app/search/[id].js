@@ -33,8 +33,8 @@ const JobSearch = () => {
         url: `https://65dd20e8e7edadead7ed6feb.mockapi.io/api/search`,
         params: {
           search: params.id,
-          page: page.toString(),
-          limit: "5",
+          p: page.toString(),
+          l: "5",
         },
       };
 
