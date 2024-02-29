@@ -39,19 +39,33 @@ const JobDetails = () => {
         return (
           <Specifics
             title="Qualifications"
-            points={data[0].job_qualifications ?? ["N/A"]}
+            points={
+              data[0].job_qualifications.length > 0
+                ? data[0].job_qualifications
+                : ["N/A"]
+            }
           />
         );
       case "About":
         return (
-          <JobAbout info={data[0].job_description ?? "No data provided"} />
+          <JobAbout
+            info={
+              data[0].job_description.length > 0
+                ? data[0].job_description
+                : "No data provided"
+            }
+          />
         );
 
       case "Responsibilities":
         return (
           <Specifics
             title="Responsibilities"
-            points={data[0].job_responsibilities ?? ["N/A"]}
+            points={
+              data[0].job_responsibilities.length > 0
+                ? data[0].job_responsibilities
+                : ["N/A"]
+            }
           />
         );
 
